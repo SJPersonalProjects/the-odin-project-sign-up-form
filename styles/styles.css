@@ -1,0 +1,75 @@
+
+
+:root {
+    --background-color: #f9fafb;  
+    --form-background-color: white;
+
+    --descriptive-heading-font-color: #3f3f3f;
+}
+
+/* Resetting the default setting of the browser. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* To display the content horizontally. */
+#form {
+    display: flex;
+}
+
+
+/* Image section of the form. */
+.image-section img {
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+/* Styling the form section of the screen. */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+#signup-description-container {
+    flex: 1;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 4rem;
+}
+
+#signup-description-container p {
+    width: 70%;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--descriptive-heading-font-color);
+}
+
+#signup-description-container p:last-child {
+    margin-top: 1rem;
+}
+
+#form-content-container {
+    flex: 1.2;
+    background-color: var(--form-background-color);
+}
+
+#account-details-container {
+    flex: 1;
+}
+
+
