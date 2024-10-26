@@ -8,13 +8,22 @@
     <title>Sign up Form - TOP</title>
 </head>
 <body>
-
+    <!-- Left side of the form. -->
     <div id="form">
-        <div class="image-section">
-            <img src="assets/background-image.jpg" alt="">
+        <div id="image-section">        
+            <img src="assets/background-image.jpg" alt="Leaves Background Image">
+
+            
+            <div id="logo-container">
+                <img src="assets/odin-lined.png" alt="The Odin Project Logo">
+                <!-- Logo text. -->
+                <p>ODIN</p>
+            </div>
+
+            <p id="attribution">Photo By Haile West on Unsplash</p>
         </div>
     
-    
+        <!-- Right side of the form. -->
         <div class="form-section">
 
             <div id="signup-description-container">
@@ -23,9 +32,57 @@
             </div>
 
             <div id="form-content-container">
+
+                <h3>Let's do this!</h3>
+
+                <form action="/submit-user-details" method="POST">    
+                    
+                    <!-- Group 1 of the list of inputs. -->
+                    <div>
+                        <div class="form-group">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name" pattern="^[A-Za-z]+([ '-][A-Za-z]+)*$" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="email_address">EMAIL</label>
+                            <input type="email" id="email_address" name="email_address" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+
+                        <!-- Submit button to create an account. -->
+                        <div class="create-account">
+                            <button type="submit">Create Account</button>
+                            <p>Already have an account? <a href="#">Log in</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Group 2 of the list of inputs. -->
+                    <div>
+                        <div class="form-group">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="number" id="phone_number" name="phone_number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_password" name="confirm_password" required>
+                        </div>
+                    </div>
+                </form>
             </div>
 
-            <div id="account-details-container">
+            <div id="create-account-container">
+                <!-- Button is positioned here in the layout but actually exists in the form section. -->
             </div>
         </div>
     </div>
